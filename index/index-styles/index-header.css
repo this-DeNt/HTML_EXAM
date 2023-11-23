@@ -66,6 +66,12 @@
     margin-right: 0.75%;
 }
 
+div.burger:hover {
+
+    background-color: #272727;
+    border-radius: 50px;
+}
+
 .logo {
 
     width: 6.6em;
@@ -210,6 +216,11 @@ div.search-bar input[type="text"]:focus {
 
     padding: 1%;
     margin-left: 1.25%;
+}
+
+div.sign-in-button:hover {
+
+    border-color: #3489d1;
 }
 
 div.sign-in-button i {

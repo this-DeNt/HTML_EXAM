@@ -1,0 +1,305 @@
+#header-container {
+
+    width: 100%;
+    height: 4.25vh;
+
+    position: static;
+    top: 0;
+
+    margin-bottom: 1%;
+}
+
+.header {
+    
+    width: inherit;
+    height: inherit;
+
+    position: inherit;
+
+    display: flex;
+    flex-direction: row;
+
+    padding: 0.5%;
+}
+
+#burger-logo-container {
+
+    width: 25%;
+    height: inherit;
+
+    display: flex;
+    flex-direction: row;
+
+    justify-content: start;
+}
+
+#search-bar-container {
+
+    width: 50%;
+    height: inherit;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#sign-in-container {
+
+    width: 25%;
+    height: inherit;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.burger {
+
+    width: 4em;
+    height: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 0.75%;
+}
+
+.logo {
+
+    width: 6.6em;
+    height: inherit;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 0.75%;
+}
+
+div.logo img {
+
+    width: inherit;
+    height: 2.3vh;
+}
+
+div.burger i {
+
+    font-size: 1.5em;
+    color: #c6c6c6c6;
+}
+
+.search-bar {
+
+    width: 60%;
+    height: 4.5vh;
+
+    border: 1px solid #222222;
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1%;
+    padding-left: 2%;
+}
+
+.search-button {
+
+    width: 4.5em;
+    height: 4.5vh;
+
+    background-color:#222222;
+
+    border: 1px solid #222222;
+    border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-right: 1%;
+
+    padding: 1%;
+}
+
+.voice-button {
+
+    width: 3em;
+    height: 4.5vh;
+
+    background-color:#222222;
+
+    border: 1px solid #222222;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-left: 1%;
+    padding: 1%;
+}
+
+.keyboard {
+
+    width: 1.2em;
+    height: inherit;
+
+    justify-self: flex-end;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+div.keyboard i {
+
+    font-size: 1.2em;
+    color: #c6c6c6c6;
+}
+
+div.search-button i {
+
+    font-size: 1.3em;
+    color: #c6c6c6c6;
+}
+
+div.voice-button i {
+
+    font-size: 1.3em;
+    color: whitesmoke;
+}
+
+div.search-bar input[type="text"] {
+
+    margin: 0%;
+    padding: 0%;
+
+    color: whitesmoke;
+    border: none;
+}
+
+div.search-bar input[type="text"]::placeholder {
+
+    font-size: large;
+}
+
+div.search-bar input[type="text"]:focus {
+
+    text-decoration: none !important;
+    outline: none !important;
+}
+
+.sign-in-button {
+
+    width: 7.5em;
+    height: 4.5vh;
+
+    border: 1px solid #222222;
+    border-radius: 25px;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 1%;
+    margin-left: 1.25%;
+}
+
+div.sign-in-button i {
+
+    color: #3489d1;
+    font-size: 1em;
+}
+
+div.sign-in-button span {
+
+    color: #3489d1;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.settings {
+
+    width: 1em;
+    height: 4.5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1%;
+
+    margin-right: 1.25%;
+}
+
+div.settings i {
+
+    color: whitesmoke;
+    font-size: 1.3em;
+}
+
+@media screen and (max-width:900px) {
+    
+    .keyboard {
+
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+    
+    .voice-button {
+
+        background-color: transparent;
+        border: none;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    
+    .search-bar {
+
+        display: none;
+    }
+    .search-button {
+
+        background-color: transparent;
+        border: none;
+        margin-right: 0%;
+
+        width: 2em;
+    }
+    .voice-button {
+
+        margin-left: 0%;
+    }
+    #search-bar-container {
+
+        justify-content: end;
+    }
+
+    #sign-in-container {
+
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    
+    .burger {
+
+        display: none;
+    }
+    .logo {
+
+        margin-left: 1em;
+    }
+}

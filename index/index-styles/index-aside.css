@@ -377,11 +377,16 @@ div.adapted-aside-button-text span {
     font-weight: 300;
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1222px) {
     
     .aside {
 
         display: none;
+    }
+
+    #aside-container {
+
+        width: 5.5em;
     }
 
     #adapted-aside {

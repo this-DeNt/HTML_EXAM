@@ -111,7 +111,7 @@ div.nav-button:hover {
 
 .vid {
 
-    width: 22em;
+    width: 25em;
     height: 25em;
 
     display: flex;
@@ -119,14 +119,16 @@ div.nav-button:hover {
 
     flex-direction: column;
 
-    margin-right: 2%;
-    margin-left: 2%;
+    margin-right: 1em;
+    margin-left: 1em;
+    margin-bottom: 1em;
+
 }
 
 .vid-thumbnail {
 
-    width: 22em;
-    height: 15em;
+    width: inherit;
+    height: calc(inherit - 10em);
     margin-bottom: 2.5%;
 }
 
@@ -134,8 +136,8 @@ div.vid-thumbnail img {
 
     border-radius: 10px;
 
-    width: 25em;
-    height: 15em;
+    width: inherit;
+    height: inherit;
 }
 
 .vid-description {
@@ -191,4 +193,147 @@ div.vid-description-pfp img {
     font-family: YouTube-Sans-Light;
     font-size: 1.1em;
     color: #8a8a8a;
+}
+
+@media screen and (max-width:1870px) {
+    
+    .vid {
+
+        width: 23em;
+        height: 23em;
+    }
+}
+
+@media screen and (max-width:1450px) {
+    
+    .vid {
+
+        width: 23em;
+        height: 23em;
+    }
+}
+
+@media screen and (max-width:1360px) {
+    
+    .vid {
+
+        width: 21em;
+        height: 21em;
+        margin-bottom: 2em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width:1268px) {
+    
+    .vid {
+
+        width: 20em;
+        height: 20em;
+        margin-bottom: 3em;
+        margin-top: 2em;
+    }
+}
+
+@media screen and (max-width:1222px) {
+    
+    .vid {
+
+        width: 22em;
+        height: 22em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width:1125px) {
+    
+    .vid {
+
+        width: 30em;
+        height: 30em;
+        margin-bottom: 1em;
+        margin-top: 1em;
+    }
+}
+
+@media screen and (max-width:1010px) {
+    
+    .vid {
+
+        width: 43vw;
+    }
+
+    .main {
+
+        justify-content: start;
+        align-self: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:950px) {
+    
+    .vid {
+
+        width: 40vw;
+    }
+
+    .main {
+
+        justify-content: start;
+        align-self: start;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:750px) {
+    
+    .vid {
+
+        width: 83vw;
+        height: 50vh;
+    }
+    .main {
+
+        justify-content: start;
+        align-self: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+    #nav-container {
+
+        height: 10vh;
+    }
+    .nav {
+
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:650px) {
+    
+    .vid {
+
+        width: 95vw;
+        height: 50vh;
+    }
+    .main {
+
+        justify-content: start;
+        align-self: start;
+        flex-direction: column;
+        flex-wrap: nowrap;
+    }
+}
+
+@media screen and (max-width:500px) {
+    
+    #nav-container {
+
+        height: 12vh;
+    }
 }

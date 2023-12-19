@@ -248,6 +248,26 @@ div.sign-in-button span {
     padding: 1%;
 
     margin-right: 1.25%;
+    margin-left: 2.5%;
+}
+
+.add-vid {
+
+    width: 3em;
+    height: 4.5vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 1%;
+
+    margin-right: 2.5%;
+}
+div.add-vid i {
+
+    color: whitesmoke;
+    font-size: 1.3em;
 }
 
 div.settings i {
@@ -256,11 +276,82 @@ div.settings i {
     font-size: 1.3em;
 }
 
+#weather-container {
+
+    width: 10em;
+    height: 3.5vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1%;
+    margin-right: 2.5%;
+    background-color: #0f0f0f;
+}
+
+.city-span-cont {
+
+    width: 33%;
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 2.5%;
+
+}
+
+.temp-span-cont {
+
+    width: 33%;
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-right: 2.5%;
+    margin-left: 2.5%;
+
+}
+
+.weath-icon-cont {
+
+    width: 33%;
+    height: inherit;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5%;
+
+}
+
+.weather-span {
+
+    color: whitesmoke;
+    font-size: 1.3em;
+    font-family: YouTube-Sans-Light;
+}
+
+@media screen and (max-width:1200px) {
+    
+    .weather-span {
+
+        font-size: 1.2em;
+    }
+}
+
 @media screen and (max-width:900px) {
     
     .keyboard {
 
         display: none;
+    }
+    .weather-span {
+
+        font-size: 1.1em;
     }
 }
 
@@ -300,6 +391,15 @@ div.settings i {
 
         justify-content: center;
         align-items: center;
+    }
+
+    .weather-span {
+
+        font-size: 1.3em;
+    }
+    .add-vid {
+
+        display: none;
     }
 }
 

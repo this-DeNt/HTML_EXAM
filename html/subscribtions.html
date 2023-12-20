@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>YouTube</title>
     <link rel="stylesheet" href="../css/subs.css">
     <link rel="stylesheet" href="../index/index-styles/index-header.css">
     <link rel="stylesheet" href="../index/index-media.css">
+    <link rel="icon" type="image/x-icon" href="../images/YouTube-Favicon-ICO.ico">
 
     <style>
         @font-face {
@@ -53,7 +54,7 @@
             <template id="card-template">
                 <div class="card-container">
                     <div class="card-h1-container">
-                        <i class="{{iClass}}"></i>
+                        <i class="{{iClass}}" style="margin-right: 5%;"></i>
                         <span>{{subType}}</span>
                     </div>
                     <hr />
@@ -120,7 +121,7 @@
             }
         }
 
-        const cardsData = [new Card("fa-solid fa-user", "99.00", "Individual"), new Card("fa-solid fa-people-roof", "149.00", "Family"), new Card("fa-solid fa-music", "74.00", "Music"), new Card("fa-solid fa-child", "999.00", "Kids"), new Card("fa-solid fa-tv", "199.00", "TV")];
+        const cardsData = [new Card("fa-solid fa-user", "Individual", "99"), new Card("fa-solid fa-people-roof", "Family", "149.00"), new Card("fa-solid fa-music", "Music", "74.00"), new Card("fa-solid fa-child", "Kids", "999.00"), new Card("fa-solid fa-tv", "TV", "199.00")];
         $(document).ready(function () {
 
             const logoTemplate = document.querySelector("#logo-template").innerHTML;
@@ -140,12 +141,12 @@
 
                 let renderCard = Mustache.render(cardTemplate, {
 
-                    iClass : cardsData[i].getiClass(),
-                    subType : cardsData[i].getsubType(),
+                    iClass: cardsData[i].getiClass(),
+                    subType: cardsData[i].getsubType(),
                     price: cardsData[i].getPrice()
                 });
 
-                $("subs-cards-container").append(renderCard);
+                $("#subs-cards-container").append(renderCard);
             }
         });
             

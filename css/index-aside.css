@@ -147,6 +147,8 @@ div.y-h-button:hover {
     flex-direction: column;
 
     justify-content: center;
+    margin-top: 1%;
+    margin-bottom: 1%;
 }
 
 .sing-in-text {
@@ -160,7 +162,8 @@ div.y-h-button:hover {
     justify-content: center;
     align-items: center;
 
-    margin-bottom: 2%;
+    margin-bottom: 5%;
+    margin-top: 5%;
 
 }
 
